@@ -175,7 +175,7 @@ kssHandlebarsGenerator.generate = function(styleguide) {
         data: {}
       };
       // If the markup is a file path, attempt to load the file.
-      if (partial.markup.match(/^[^\n]+\.(html|hbs)$/)) {
+      if (partial.markup.match(/^[^\n]+\.(html|hbs|mustache)$/)) {
         partial.file = partial.markup;
         partial.name = path.basename(partial.file, path.extname(partial.file));
         files = [];
